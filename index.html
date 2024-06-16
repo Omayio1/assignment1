@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEGIS Student Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home Page Content -->
+      <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>
+          As a GEGIS student, I am excited to share my projects and ideas with
+          you.
+        </p>
+
+        <div class="project-ideas">
+          <div class="project">
+            <h2>Project Idea 1: Get User's Location</h2>
+            <p>
+              Click the button below to get your current location using the
+              Geolocation API and see it on a map.
+            </p>
+            <button id="toggleLocationBtn" onclick="toggleLocation()">
+              Show Location
+            </button>
+            <div id="location-details">
+              <div id="location-output"></div>
+              <div id="map" style="height: 300px"></div>
+            </div>
+          </div>
+          <div class="project">
+            <h2>
+              Project Idea 2: AI and Machine Learning to Detect Growth of Slums
+            </h2>
+            <p>
+              Using AI and machine learning with Google Earth Engine (GEE) and
+              automation tools to detect and analyze the growth of slums in
+              urban areas.
+            </p>
+          </div>
+          <div class="project">
+            <h2>Project Idea 3: Real-Time Weather Data Collection</h2>
+            <p>Enter a location to get real-time weather data.</p>
+            <input
+              type="text"
+              id="weather-location"
+              placeholder="Enter location"
+            />
+            <button onclick="getWeather()">Get Weather</button>
+            <div id="weather-modal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="weather-details"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <h2>Project Idea 4: Traffic Details in Current Location</h2>
+            <p>
+              Click the button below to get real-time traffic information for
+              your current location.
+            </p>
+            <button id="toggleTrafficBtn" onclick="toggleTraffic()">
+              Show Traffic Details
+            </button>
+            <div id="traffic-details"></div>
+          </div>
+        </div>
+
+        <div class="filter-section">
+          <h3>Filter Projects</h3>
+          <input type="text" id="filter" placeholder="Search projects..." />
+          <button onclick="filterProjects()">Filter</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
