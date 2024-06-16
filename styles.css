@@ -127,7 +127,7 @@ footer {
   background-color: #32de84;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 0.4rem;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -140,7 +140,7 @@ footer {
 }
 
 .skill-box {
-  background-color: #e0e0e0;
+  background-color: #fff;
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
