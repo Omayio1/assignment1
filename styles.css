@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #333333a6;
+  background-color: #32de84;
   padding: 1rem;
 }
 
@@ -57,7 +57,7 @@ section {
 
 button {
   padding: 0.5rem 1rem;
-  background-color: #333;
+  background-color: #32de84;
   color: white;
   border: none;
   cursor: pointer;
@@ -65,7 +65,7 @@ button {
 }
 
 button:hover {
-  background-color: #555;
+  background-color:#239b5c;
 }
 
 #location-details,
@@ -124,7 +124,7 @@ button:hover {
 }
 
 footer {
-  background-color: #333;
+  background-color: #32de84;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -165,7 +165,7 @@ footer {
 
 .skill-box a {
   display: block;
-  color: #333;
+  color: #32de84;
   text-decoration: none;
   font-weight: bold;
   margin-top: 0.5rem;
